@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/entry</content-type>
+	<display-template>/templates/web/entry.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<placeInNav>false</placeInNav>
+	<file-name>index.xml</file-name>
+	<internal-name>Home (ES)</internal-name>
+	<orderDefault_f>-1</orderDefault_f>
+	<title_t>¡Hola!</title_t>
+	<body_html>&lt;p&gt;Bienvenido al sitio. Esta es la versión en español de la página de inicio.&lt;/p&gt;</body_html>
+	<pageMedia_o>
+		<item path="/site/components/shared/page-media.xml" />
+	</pageMedia_o>
+	<disabled>false</disabled>
+</page>

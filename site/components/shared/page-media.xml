@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/page-media</content-type>
+	<display-template></display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<file-name>page-media.xml</file-name>
+	<internal-name>Page Media (Shared)</internal-name>
+	<hero_image_s>/static-assets/images/shared/hero.jpg</hero_image_s>
+	<disabled>false</disabled>
+</component>
