@@ -21,4 +21,18 @@
 
 <site>
 	<version>4.0.1</version>
+
+	<targeting>
+		<!-- Enable locale-based content targeting -->
+		<enabled>true</enabled>
+		<!-- Root folder that contains locale subfolders (en/, es/, etc.) -->
+		<rootFolders>/site/website</rootFolders>
+		<!-- Locale to fall back to when no match is found -->
+		<fallbackTargetId>en</fallbackTargetId>
+		<!-- Merge locale folders so navigation sees all pages regardless of locale -->
+		<mergeFolders>true</mergeFolders>
+		<!-- Set to true to automatically redirect / to /en based on browser locale -->
+		<redirectToTargetedUrl>false</redirectToTargetedUrl>
+	</targeting>
+
 </site>

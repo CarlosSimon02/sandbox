@@ -17,49 +17,40 @@
 
 <translation-config>
 
-	<!-- List of codes for the supported locales -->
-	<!--
+	<!-- Supported locales for this site -->
 	<localeCodes>
-	    <localeCode>en_us</localeCode>
+		<localeCode>en</localeCode>
+		<localeCode>es</localeCode>
 	</localeCodes>
-	-->
 
-	<!-- The code of the default locale for all new content -->
-	<!--
-	<defaultLocaleCode>en_us</defaultLocaleCode>
-	-->
+	<!-- Default locale used when creating new content -->
+	<defaultLocaleCode>en</defaultLocaleCode>
 
-	<!-- Indicates if the default locale should be used when none of the resolvers can find a locale -->
-	<!--
+	<!-- Fall back to the default locale when no resolver matches -->
 	<fallbackToDefaultLocale>true</fallbackToDefaultLocale>
-	-->
 
-	<!-- List of locale resolvers -->
 	<!--
-	<localeResolvers>
+	    Locale resolvers are tried in order until one returns a locale.
+	    - urlPattern: detects locale from the URL path (/en/... or /es/...)
+	    - header:     uses the Accept-Language HTTP header (browser preference)
 	-->
-	<!-- List of locale resolvers, will be executed in the same order until one returns a locale -->
-	<!--
-	<localeResolver>
-	    <type>urlPattern</type>
-	    <mappings>
-		<mapping>
-		    <pattern>.+/en</pattern>
-		    <localeCode>en_us</localeCode>
-		</mapping>
-	    </mappings>
-	</localeResolver>
-	<localeResolver>
-	    <type>cookie</type>
-	</localeResolver>
-	<localeResolver>
-	    <type>header</type>
-	</localeResolver>
-	<localeResolver>
-	    <type>groovy</type>
-	    <script>/scripts/locale.groovy</script>
-	</localeResolver>
-    </localeResolvers>
-    -->
+	<localeResolvers>
+		<localeResolver>
+			<type>urlPattern</type>
+			<mappings>
+				<mapping>
+					<pattern>/en(/.*)?</pattern>
+					<localeCode>en</localeCode>
+				</mapping>
+				<mapping>
+					<pattern>/es(/.*)?</pattern>
+					<localeCode>es</localeCode>
+				</mapping>
+			</mappings>
+		</localeResolver>
+		<localeResolver>
+			<type>header</type>
+		</localeResolver>
+	</localeResolvers>
 
 </translation-config>

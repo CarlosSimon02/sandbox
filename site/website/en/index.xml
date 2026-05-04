@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/entry</content-type>
+	<display-template>/templates/web/entry.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<placeInNav>false</placeInNav>
+	<file-name>index.xml</file-name>
+	<internal-name>Home (EN)</internal-name>
+	<orderDefault_f>-1</orderDefault_f>
+	<title_t>Hello!</title_t>
+	<body_html>&lt;p&gt;Welcome to the site. This is the English version of the home page.&lt;/p&gt;</body_html>
+	<disabled>false</disabled>
+</page>
