@@ -17,10 +17,10 @@
 		</nav>
 		<#-- Shared media component — same image regardless of locale -->
 		<#if contentModel.pageMedia_o?? && contentModel.pageMedia_o.item??>
-			<#assign media = contentModel.pageMedia_o.item />
-			<#if media.hero_image_s?has_content>
+			<#assign heroImage = contentModel.pageMedia_o.item.component.hero_image_s!'' />
+			<#if heroImage?has_content>
 				<div class="w-full">
-					<img src="${media.hero_image_s}" alt="Hero" class="w-full h-48 object-cover">
+					<img src="${heroImage}" alt="Hero" class="w-full h-48 object-cover">
 				</div>
 			</#if>
 		</#if>
